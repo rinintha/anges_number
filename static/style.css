@@ -1,0 +1,85 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set background color and center content vertically */
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Main container with rounded corners */
+.container {
+    width: 80%;
+    max-width: 600px; /* Adjust maximum width as needed */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for depth */
+    text-align: center; /* Center align text */
+}
+
+/* Title styling */
+h1 {
+    font-family: 'JetBrains Mono', monospace;
+    color: #333333;
+}
+
+/* Specific styling for h2 using JetBrains Mono */
+h2 {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 400; /* Adjust font weight as needed */
+    font-size: 16px;
+    margin-top: 10px; /* Add space between title and subtitle */
+}
+
+/* Form styling */
+form {
+    margin-top: 20px; /* Add space between subtitle and form */
+}
+
+/* Rounded corners for input box */
+input[type="number"] {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    width: calc(100% - 50px); /* Adjust width for input field */
+    margin-top:10px;
+    margin-bottom: 10px; /* Add space between input and button */
+}
+
+/* Rounded corners for submit button */
+button[type="submit"] {
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #3689af; /* Blue background */
+    font-family: 'JetBrains Mono', monospace;
+    color: white; /* White text */
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Center align text within buttons */
+button {
+    text-align: center;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #265c75; /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}

@@ -1,0 +1,24 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ange's Number</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap">
+</head>
+<body>
+    <div class="container">
+    <h1>Ange's Number</h1>
+    <h2>Ange is thinking a number between 1-100, can you guess it?</h2>
+    <form action="/guess" method="post">
+        <label for="guess">Your guess:</label>
+        <input type="number" id="guess" name="guess" required autofocus>
+        <button type="submit">Submit</button>
+    </form>
+    <p>{{ message }}</p>
+    </div>
+</body>
+</html>
